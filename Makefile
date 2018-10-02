@@ -13,6 +13,7 @@ compile:
 build: build-deps compile fmt vet lint
 
 install:
+	export GOBIN=$GOPATH/bin
 	go install ./...
 
 fmt:
